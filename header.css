@@ -1,0 +1,255 @@
+body {
+  margin: 0;
+}
+
+header {
+  font-family: "Poppins", sans-serif;
+  background-color: hsl(193, 100%, 96%);
+  background-image: url("images/bg_hero_desktop.svg");
+  background-repeat: no-repeat;
+
+}
+
+.header_haut {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 60px 45px;
+}
+
+.logo {
+  width: 60%;
+  height: auto;
+  padding: 10px 0 0 0;
+}
+
+.open-button {
+  width: max-content;
+  padding: 11px 50px;
+  border: none;
+  border-radius: 25px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  background-color: white;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+}
+
+.open-button:hover {
+  color: grey;
+  cursor: pointer;
+}
+/* popup.css */
+
+/* .form-popup {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+ */
+
+ .form-popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.popup-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Add any additional styles for your form elements here */
+
+
+
+/*h2 du popup*/
+h2{
+  font-size: 30px;
+  margin: 0 0 25px 0;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 90%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+  max-width: 10%;
+  padding: 2px;
+  margin: 0 0 0 271px;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+.header_bas {
+  display: flex;
+  padding: 15px 60px;
+}
+
+.bloc {
+  max-width: 44%;
+  padding: 56px 0 0 0;
+}
+
+.button_2 {
+  width: max-content;
+  padding: 13px 50px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 25px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  color: white;
+  background-color: hsl(322, 100%, 66%);
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+}
+
+.button_2:hover {
+  background-color: #ff9bdb;
+  cursor: pointer;
+}
+
+#image_mockup {
+  max-width: 92%;
+  padding: 0 0 0 56px;
+}
+
+@media only screen and (min-width: 737px) and (max-width: 950px) {
+  /* TABLETTE */
+
+
+  .header_bas {
+    padding: 0px 30px 65px;
+  }
+
+  .bloc {
+    max-width: 42%;
+    padding: 25px 0 0 0;
+    font-size: 13px;
+  }
+
+  #image_mockup {
+    max-width: 90%;
+    padding: 0px 0 0 40px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 736px) {
+  /*TABLETTE 2.0*/
+
+
+  .header_bas {
+    padding: 15px 20px 75px;
+  }
+
+  .bloc {
+    max-width: 45%;
+    padding: 12px 0 0 0;
+    font-size: 12px;
+  }
+
+  #image_mockup {
+    max-width: 95%;
+    padding: 0 0 0 23px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  /* PORTABLE */
+  header {
+    background-color: hsl(193, 100%, 96%);
+    background-image: url("images/bg_hero_mobile.svg");
+    background-repeat: no-repeat;
+  }
+
+
+
+
+
+  .header_bas {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  .bloc {
+    text-align: center;
+    max-width: 84%;
+    font-size: 14px;
+  }
+
+  .button_2 {
+    padding: 10px 60px;
+    margin-top: 16px;
+  }
+
+  .grande_image {
+    display: flex;
+    justify-content: center;
+  }
+
+  #image_mockup {
+    max-width: 80%;
+    padding: 50px;
+  }
+}

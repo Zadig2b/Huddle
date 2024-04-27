@@ -1,0 +1,74 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    }
+
+.firstBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 150px 50px 40px 50px;
+    padding: 80px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px 5px rgba(0, 0, 0, 0.1),
+        0 2px 4px -1px rgba(0, 0, 0, 0.06);   
+    gap: 30px;
+}
+.secondBox {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px;
+    margin: 40px 50px 40px 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px 5px rgba(0, 0, 0, 0.1),
+        0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    gap: 30px;
+}
+
+.thirdBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px;
+    margin: 40px 50px 150px 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px 5px rgba(0, 0, 0, 0.1),
+        0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    gap: 30px;
+}
+
+.img-card {
+    width: 40%;
+    height: auto;
+}
+.title-card{
+    font-weight: 700;
+}
+.textContent {
+    color:darkgrey;
+    font-weight: 400;
+    max-width: 490px;
+}
+@media only screen and (max-width: 576px){
+    .firstBox {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .secondBox {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .thirdBox {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .img-card{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 100%;
+        
+    }
+}
